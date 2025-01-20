@@ -65,5 +65,12 @@ colArray.forEach((div) => {
             div.style.backgroundColor = colorPicker.value;
         }
     });
+    div.addEventListener("touchstart", () =>{
+        if (isRandom.checked == true) {
+            div.style.backgroundColor = getRandomColor();
+        }else{
+            div.style.backgroundColor = colorPicker.value;
+        }
+    });
 });
 
