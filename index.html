@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="side">
+            <div>
+                <div id="colorcont"><p>Choose a color:</p><input type="color" id="color" value="#ff0000" /></div>
+                <div id="randomCheck">
+                    <p>Random colors?</p>
+                    <input class="checkbox" type="checkbox" id="random" />
+                </div>
+            </div>
+            <div id="sliders">
+            <div class="rowslidecontainer">
+                <input
+                    type="range"
+                    min="10"
+                    max="100"
+                    value="16"
+                    class="slider"
+                    id="rowRange"
+                />
+                <p id="rowOutput"></p>
+            </div>
+            <div class="rowslidecontainer">
+                <input
+                    type="range"
+                    min="10"
+                    max="100"
+                    value="16"
+                    class="slider"
+                    id="colRange"
+                />
+                <p id="colOutput"></p>
+            </div>
+            <button class="loadButton" onClick="window.location.reload();">
+               Load
+           </button>
+          </div>
+          
+        </div>
+        <div id="container"></div>
+    </body>
+</html>
